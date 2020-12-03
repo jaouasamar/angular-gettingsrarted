@@ -9,7 +9,7 @@ import { products } from '../products';
   styleUrls: ['./products-details.component.css']
 })
 export class ProductsDetailsComponent implements OnInit {
-  product;
+  product: { name: string; price: number; description: string; };
   constructor(
      private route: ActivatedRoute,
   ) { }
